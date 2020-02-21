@@ -35,7 +35,7 @@
             "type": "manualJudgment"
           }
         ],
-        "triggers": [],
+        "triggers": []
     }
   ]
 }
