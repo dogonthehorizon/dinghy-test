@@ -1,0 +1,35 @@
+{
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "anonymous",
+  "limitConcurrent": true,
+  "stages": [
+    {
+      "name": "Wait 5s",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "type": "wait",
+      "waitTime": 5
+    },
+    {
+      "failPipeline": true,
+      "instructions": "This will fail maybe?",
+      "judgmentInputs": [
+        {
+          "value": "foo"
+        },
+        {
+          "value": "bar"
+        }
+      ],
+      "name": "Hand of God",
+      "notifications": [],
+      "refId": "2",
+      "requisiteStageRefIds": [
+        "1"
+      ],
+      "type": "manualJudgment"
+    }
+  ],
+  "triggers": [],
+  "updateTs": "1582236397000"
+}
