@@ -13,7 +13,7 @@
             "refId": "1",
             "requisiteStageRefIds": [],
             "type": "wait",
-            "waitTime": 20
+            "waitTime": 3
           },
           {
             "failPipeline": true,
