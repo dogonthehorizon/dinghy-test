@@ -14,25 +14,6 @@
             "requisiteStageRefIds": [],
             "type": "wait",
             "waitTime": 20
-          },
-          {
-            "failPipeline": true,
-            "instructions": "This will fail maybe?",
-            "judgmentInputs": [
-              {
-                "value": "foo"
-              },
-              {
-                "value": "bar"
-              }
-            ],
-            "name": "Hand of God",
-            "notifications": [],
-            "refId": "2",
-            "requisiteStageRefIds": [
-              "1"
-            ],
-            "type": "manualJudgment"
           }
         ],
         "triggers": []
