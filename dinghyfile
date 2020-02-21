@@ -1,9 +1,9 @@
 {
-  "application": "mylittleapp2",
+  "application": "mylittleapp",
   "pipelines": [
     {
-        "application": "mylittleapp2",
-        "name": "foo",
+        "application": "mylittleapp",
+        "name": "newPipe",
         "keepWaitingPipelines": false,
         "lastModifiedBy": "anonymous",
         "limitConcurrent": true,
