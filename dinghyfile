@@ -5,7 +5,6 @@
         "application": "mylittleapp",
         "name": "newPipe",
         "keepWaitingPipelines": false,
-        "lastModifiedBy": "anonymous",
         "limitConcurrent": true,
         "stages": [
           {
@@ -13,7 +12,7 @@
             "refId": "1",
             "requisiteStageRefIds": [],
             "type": "wait",
-            "waitTime": 20
+            "waitTime": 10
           }
         ],
         "triggers": []
