@@ -1,19 +1,19 @@
 {
-  "application": "mylittleapp",
-    "pipelines": [
+  "application": "foo",
+  "pipelines": [
     {
-      "application": "mylittleapp",
-      "name": "newPipe",
+      "application": "foo",
+      "name": "sample",
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
       "stages": [
-      {
-        "name": "Wait 5s",
-        "refId": "1",
-        "requisiteStageRefIds": [],
-        "type": "wait",
-        "waitTime": 20
-      }
+        {
+          "name": "Wait 5s",
+          "refId": "1",
+          "requisiteStageRefIds": [],
+          "type": "wait",
+          "waitTime": 10
+        }
       ],
       "triggers": []
     },
@@ -21,9 +21,9 @@
       "failPipeline": true,
       "instructions": "Are you foo?",
       "judgmentInputs": [
-      {
-        "value": "foo"
-      }
+        {
+          "value": "foo"
+        }
       ],
       "name": "Some manual judgement",
       "notifications": [],
