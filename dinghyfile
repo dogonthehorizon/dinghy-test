@@ -16,13 +16,8 @@
         },
         {
           "failPipeline": true,
-          "instructions": "Are you foo?",
-          "judgmentInputs": [
-            {
-              "value": "foo"
-            }
-          ],
-          "name": "Some manual judgement",
+          "judgmentInputs": [],
+          "name": "Manual Judgment",
           "notifications": [],
           "refId": "2",
           "requisiteStageRefIds": [
