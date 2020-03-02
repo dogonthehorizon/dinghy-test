@@ -13,25 +13,25 @@
           "requisiteStageRefIds": [],
           "type": "wait",
           "waitTime": 10
+        },
+        {
+          "failPipeline": true,
+          "instructions": "Are you foo?",
+          "judgmentInputs": [
+            {
+              "value": "foo"
+            }
+          ],
+          "name": "Some manual judgement",
+          "notifications": [],
+          "refId": "2",
+          "requisiteStageRefIds": [
+            "1"
+          ],
+          "type": "manualJudgment"
         }
       ],
       "triggers": []
-    },
-    {
-      "failPipeline": true,
-      "instructions": "Are you foo?",
-      "judgmentInputs": [
-        {
-          "value": "foo"
-        }
-      ],
-      "name": "Some manual judgement",
-      "notifications": [],
-      "refId": "2",
-      "requisiteStageRefIds": [
-        "1"
-      ],
-      "type": "manualJudgment"
     }
   ]
 }
