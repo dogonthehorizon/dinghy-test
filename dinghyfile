@@ -13,17 +13,6 @@
           "requisiteStageRefIds": [],
           "type": "wait",
           "waitTime": 20
-        },
-        {
-          "failPipeline": true,
-          "judgmentInputs": [],
-          "name": "Manual Judgment",
-          "notifications": [],
-          "refId": "2",
-          "requisiteStageRefIds": [
-            "1"
-          ],
-          "type": "manualJudgment"
         }
       ],
       "triggers": []
