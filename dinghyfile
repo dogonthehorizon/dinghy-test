@@ -5,7 +5,7 @@
       "application": "foo",
       "name": "sample",
       "keepWaitingPipelines": false,
-      "limitConcurrent": false,
+      "limitConcurrent": true,
       "stages": [
         {{ module "wait.stage.module" }}
       ],
