@@ -2,7 +2,7 @@
 "pipelines" = [
   {
     "application": "foo",
-    "name": "sample",
+    "name": "sample-pipeline",
     "keepWaitingPipelines": false,
     "limitConcurrent": true,
     "stages": [
