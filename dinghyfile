@@ -7,7 +7,7 @@
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
       "stages": [
-        {{ module "wait.stage.module.dne" }}
+        {{ module "wait.stage.module.dne2" }}
       ],
       "triggers": []
     }
