@@ -1,13 +1,15 @@
-"application" = "foo"
-"pipelines" = [
-  {
-    "application": "foo",
-    "name": "sample-pipeline",
-    "keepWaitingPipelines": false,
-    "limitConcurrent": true,
-    "stages": [
-      {{ module "wait.stage.module" }}
-    ],
-    "triggers": []
-  }
-]
+{
+  "application": "my-application",
+  "pipelines": [
+    {
+      "application": "my-application",
+      "name": "Deploy to Production",
+      "keepWaitingPipelines": false,
+      "limitConcurrent": true,
+      "stages": [
+        {{ module "wait.stage.module" }}
+      ],
+      "triggers": []
+    }
+  ]
+}
