@@ -5,7 +5,7 @@
       "application": "my-application",
       "name": "Deploy to Production",
       "keepWaitingPipelines": false,
-      "limitConcurrent": false,
+      "limitConcurrent": true,
       "stages": [
         {{ module "wait.stage.module.dne2" }}
       ],
