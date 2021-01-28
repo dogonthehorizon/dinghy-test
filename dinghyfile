@@ -7,7 +7,7 @@
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
       "stages": [
-        {{ module "deploy.stage" }}
+        {{ module "deploy.stage.module" }}
       ],
       "triggers": []
     }
