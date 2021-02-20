@@ -4,7 +4,7 @@
     {
       "application": "my-application",
       "name": "Deploy to Production2",
-      "keepWaitingPipelines": false,
+      "keepWaitingPipelines": true,
       "limitConcurrent": true,
       "stages": [
         {{ module "deploy.stage.module" }}
