@@ -3,7 +3,7 @@
   "pipelines": [
     {
       "application": "my-application",
-      "name": "Deploy to Production2",
+      "name": "Deploy to Production3",
       "keepWaitingPipelines": true,
       "limitConcurrent": true,
       "stages": [
