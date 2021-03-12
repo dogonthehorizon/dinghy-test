@@ -2,7 +2,7 @@
   "application": "test",
   "dataSources": {
     "disabled": [
-      "clusters"
+      "serverGroups"
     ],
     "enabled": [
       "canaryConfigs"
