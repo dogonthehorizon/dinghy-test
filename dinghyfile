@@ -1,15 +1,25 @@
 {
-  "application": "my-application",
-  "pipelines": [
-    {
-      "application": "my-application",
-      "name": "Deploy to Production2",
-      "keepWaitingPipelines": true,
-      "limitConcurrent": true,
-      "stages": [
-        {{ module "deploy.stage.module" }}
-      ],
-      "triggers": []
-    }
-  ]
+    "application": "test",
+    "dataSources": {
+      "enabled": [
+        "canaryConfigs"
+      ]
+    },
+    "pipelines": [
+        {
+          "application": "test",
+          "name": "Wait Pipeline Test 3",
+          "isNew": true,
+          "keepWaitingPipelines": false,
+          "limitConcurrent": false,
+          "stages": [
+            {
+              "name": "one",
+              "type": "wait",
+              "waitTime": 10
+            }  
+          ],
+          "triggers": []
+        }
+       ]
 }
