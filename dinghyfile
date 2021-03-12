@@ -1,6 +1,9 @@
 {
   "application": "test",
   "dataSources": {
+    "disabled": [
+      "clusters"
+    ],
     "enabled": [
       "canaryConfigs"
       ]
