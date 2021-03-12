@@ -1,25 +1,25 @@
 {
-    "application": "test",
-    "dataSources": {
-      "enabled": [
-        "canaryConfigs"
+  "application": "test",
+  "dataSources": {
+    "enabled": [
+      "canaryConfigs"
       ]
-    },
-    "pipelines": [
+  },
+  "pipelines": [
+    {
+      "application": "test",
+      "name": "Wait Pipeline Test 3",
+      "isNew": true,
+      "keepWaitingPipelines": false,
+      "limitConcurrent": false,
+      "stages": [
         {
-          "application": "test",
-          "name": "Wait Pipeline Test 3",
-          "isNew": true,
-          "keepWaitingPipelines": false,
-          "limitConcurrent": false,
-          "stages": [
-            {
-              "name": "one",
-              "type": "wait",
-              "waitTime": 10
-            }  
-          ],
-          "triggers": []
-        }
-       ]
+          "name": "one",
+          "type": "wait",
+          "waitTime": 10
+        }  
+      ],
+      "triggers": []
+    }
+  ]
 }
