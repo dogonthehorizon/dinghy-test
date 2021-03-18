@@ -1,12 +1,14 @@
 {
   "application": "test",
-  "dataSources": {
-    "disabled": [
-      "serverGroups"
-    ],
-    "enabled": [
-      "canaryConfigs"
+  "appmetadata": {
+    "dataSources": {
+      "disabled": [
+        "serverGroups"
+      ],
+      "enabled": [
+        "canaryConfigs"
       ]
+    }
   },
   "pipelines": [
     {
