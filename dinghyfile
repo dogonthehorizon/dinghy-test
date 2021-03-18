@@ -2,8 +2,7 @@
   "application": "test",
   "dataSources": {
     "disabled": [
-      "serverGroups",
-      "loadBalancers"
+      "serverGroups"
     ],
     "enabled": [
       "canaryConfigs"
