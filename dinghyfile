@@ -6,9 +6,12 @@
   "pipelines": [
     {
       "application": "{{ var "app" }}",
-      "name": "test",
+      "name": "test2",
       "stages": [
-        {{ module "wait.stage.module" }}
+        {
+          "type": "wait",
+          "waitTime": 5
+        }
       ]
     }
   ]
