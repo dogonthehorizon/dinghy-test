@@ -6,7 +6,7 @@
   "pipelines": [
     {
       "application": "{{ var "app" }}",
-      "name": "my-dhingy-name3",
+      "name": "test",
       "stages": [
         {{ module "wait.stage.module" }}
       ]
