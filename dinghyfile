@@ -6,6 +6,7 @@
   "pipelines": [
     {
       "application": "{{ var "app" }}",
+      "description": "foo",
       "name": "test3",
       "stages": [
         {
