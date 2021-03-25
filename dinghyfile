@@ -1,12 +1,12 @@
 {
   "application": "{{ var "app" }}",
   "globals": {
-    "app": "helloDinghyFile4"
+    "app": "helloDinghyFile3"
   },
   "pipelines": [
     {
       "application": "{{ var "app" }}",
-      "name": "my-dhingy-name4",
+      "name": "my-dhingy-name3",
       "stages": [
         {{ module "wait.stage.module" }}
       ]
