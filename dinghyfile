@@ -2,7 +2,7 @@
   "application": "{{ var "app" }}",
   "globals": {
     "app": "helloDinghyFile4"
-  }
+  },
   "pipelines": [
     {
       "application": "{{ var "app" }}",
