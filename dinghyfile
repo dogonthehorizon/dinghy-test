@@ -6,7 +6,7 @@
   "pipelines": [
     {
       "application": "{{ var "app" }}",
-      "name": "test2",
+      "name": "test3",
       "stages": [
         {
           "type": "wait",
