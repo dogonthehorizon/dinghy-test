@@ -1,76 +1,9 @@
-{
-  "application": "{{ var "app" }}",
-  "globals": {
-    "app": "simple3"
-  },
-  "pipelines": [
-    {
-      "application": "{{ var "app" }}",
-      "description": "foo",
-      "name": "test3",
-      "stages": [
-        {
-          "type": "wait",
-          "waitTime": 5
-        }
-      ]
-    },
-    {
-      "application": "{{ var "app" }}",
-      "name": "testasdfasdf",
-      "stages": [
-        {
-          "account": "kubernetes",
-          "cloudProvider": "kubernetes",
-          "manifests": [
-            {
-              "apiVersion": "apps/v1",
-              "kind": "Deployment",
-              "metadata": {
-                "name": "nginx-deployment"
-              },
-              "spec": {
-                "replicas": 2,
-                "selector": {
-                  "matchLabels": {
-                    "app": "nginx"
-                  }
-                },
-                "template": {
-                  "metadata": {
-                    "labels": {
-                      "app": "nginx"
-                    }
-                  },
-                  "spec": {
-                    "containers": [
-                      {
-                        "image": "nginx:1.14.2",
-                        "name": "nginx",
-                        "ports": [
-                          {
-                            "containerPort": 80
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          ],
-          "moniker": {
-            "app": "hellodinghyfile3"
-          },
-          "name": "Deploy (Manifest)",
-          "namespaceOverride": "ffreire-dev",
-          "refId": "1",
-          "requisiteStageRefIds": [],
-          "skipExpressionEvaluation": false,
-          "source": "text",
-          "type": "deployManifest"
-        }
-      ]
-    }
-  ]
-}
+application: {{ var "app" }}
+globals:
+  app: simple3
+pipelines:
+  - application: {{ var "app" }}
+    name: test4
+    stages:
+      - type: wait
+        waitTime: 5
