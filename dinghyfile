@@ -1,9 +1,16 @@
-application: {{ var "app" }}
-globals:
-  app: simple3
-pipelines:
-  - application: {{ var "app" }}
-    name: test4
-    stages:
-      - type: wait
-        waitTime: 5
+{
+  "application": "{{ var "app" }}",
+  "globals": {
+    "app": "simple3"
+  },
+  "pipelines": [
+    {
+      "application": "{{ var "app" }}",
+      "description": "foo",
+      "name": "test3",
+      "stages": [
+        {{ module "wait.stage" }}
+      ]
+    }
+  ]
+}
